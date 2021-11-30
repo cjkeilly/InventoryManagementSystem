@@ -4,14 +4,16 @@ public class Item {
 
     private int itemCode;
     private String name;
-    private float pricePerUnit;
+    private double cost;
+    private double price;
     private int numUnits;
 
     // constructor
-    public Item(int itemCode, String name, float pricePerUnit, int numUnits) {
+    public Item(int itemCode, String name, double cost, double price, int numUnits) {
         this.itemCode = itemCode;
         this.name = name;
-        this.pricePerUnit = pricePerUnit;
+        this.cost = cost;
+        this.price = price;
         this.numUnits = numUnits;
     }
 
@@ -35,14 +37,24 @@ public class Item {
         this.name = name;
     }
 
-    // getter method for pricePerUnit
-    public float getPricePerUnit() {
-        return pricePerUnit;
+    // getter method for cost
+    public double getCost() {
+        return cost;
     }
 
-    // setter method for pricePerUnit
-    public void setPricePerUnit(float pricePerUnit) {
-        this.pricePerUnit = pricePerUnit;
+    // setter method for cost
+    public void setCost(float cost) {
+        this.cost = cost;
+    }
+
+    // getter method for price
+    public double getPrice() {
+        return price;
+    }
+
+    // setter method for price
+    public void setPrice(float price) {
+        this.price = price;
     }
 
     // getter method for numUnits

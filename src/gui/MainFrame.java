@@ -4,6 +4,7 @@ package gui;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 
 // creates main menu of the application
 public class MainFrame extends JFrame {
