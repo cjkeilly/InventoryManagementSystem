@@ -21,6 +21,7 @@ public class Purchase {
 	public void calculateTotal(double pricePerUnit, double taxCost, int numUnits) {
 		double total = (pricePerUnit * numUnits) + taxCost;
 	}
+	
 
 	// getter method for selectedItem
 	public void getSelectedItem() {
