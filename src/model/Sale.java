@@ -9,6 +9,7 @@ public class Sale {
 	// method to display the items purchased?
 	public void displayItems(Item item) {
 		
+		
 	}
 
 	// method to recieve a notification that your items have been purchased?
