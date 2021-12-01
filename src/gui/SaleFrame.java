@@ -35,6 +35,7 @@ public class SaleFrame extends JFrame {
 	    setSize(600, 500);                                    // set size of JFrame
 	    setVisible(true);   
 	    
+	    //declare text fields and their labels
 	    itemCodeLabel = new JLabel("Item Code: ");
 	    itemCodeField = new JTextField();
 	    unitsPurchasedLabel = new JLabel("Number of Units Purchased: ");
