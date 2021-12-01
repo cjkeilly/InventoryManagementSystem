@@ -14,9 +14,9 @@ public class PurchaseFrame extends JFrame {
     private JLabel unitsPurchasedLabel;
     private JTextField unitsPurchasedField;
     private JLabel itemNameLabel;
-    private JTextField itemNameTextField;
+    private JTextField itemNameField;
     private JLabel pricePerUnitLabel;
-    private JTextField pricePerUnitTextField;
+    private JTextField pricePerUnitField;
 
     // initialize text areas and their labels
     private JLabel totalLabel;
@@ -39,9 +39,9 @@ public class PurchaseFrame extends JFrame {
         unitsPurchasedLabel = new JLabel("Number of Units Purchased: ");
         unitsPurchasedField = new JTextField();
         itemNameLabel = new JLabel("Item Name: ");
-        itemNameTextField = new JTextField();
+        itemNameField = new JTextField();
         pricePerUnitLabel = new JLabel("Price Per Unit: ");
-        pricePerUnitTextField = new JTextField();
+        pricePerUnitField = new JTextField();
 
         // declare text areas and their labels
         totalLabel = new JLabel("Total: ");
@@ -57,9 +57,9 @@ public class PurchaseFrame extends JFrame {
         add(unitsPurchasedLabel);
         add(unitsPurchasedField);
         add(itemNameLabel);
-        add(itemNameTextField);
+        add(itemNameField);
         add(pricePerUnitLabel);
-        add(pricePerUnitTextField);
+        add(pricePerUnitField);
 
         // add text areas and their labels to the JFrame
         add(totalLabel);
@@ -69,10 +69,13 @@ public class PurchaseFrame extends JFrame {
         add(confirmButton);
         add(backButton);
 
-        confirmButton.addActionListener(new ActionListener() {             // add an action listener to the confirm button
+        confirmButton.addActionListener(new ActionListener() {                       // add an action listener to the confirm button
             @Override
-            public void actionPerformed(ActionEvent e) {                   // when button is clicked
-                                                                           //
+            public void actionPerformed(ActionEvent e) {                             // when button is clicked
+                int itemCode = Integer.parseInt(itemCodeField.getText());
+                int unitsPurchased = Integer.parseInt(itemNameField.getText());
+                String name = itemNameField.getText();
+
             }
         });
 
@@ -83,6 +86,4 @@ public class PurchaseFrame extends JFrame {
             }
         });
     }
-
-
 }

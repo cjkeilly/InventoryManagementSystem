@@ -1,12 +1,9 @@
 package model;
 
-import java.util.Date;
-
 public class Purchase {
 	
     private Item item;
     private int numUnits;
-<<<<<<< HEAD
     private Connection con;
     private double tax;
     private double pricePerUnit;
@@ -35,8 +32,4 @@ public class Purchase {
 	public void setSelectedItems(Item selectedItem) {
 		this.selectedItem = selectedItem;
 	}
-
-=======
-    private Date date;
->>>>>>> branch 'master' of https://github.com/cjkeilly/InventoryManagementSystem.git
 }

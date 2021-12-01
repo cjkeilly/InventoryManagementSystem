@@ -45,6 +45,12 @@ public class MainFrame extends JFrame {
                 new PurchaseFrame();                                        // display PurchaseFrame
             }
         });
+        
+        saleButton.addActionListener(new ActionListener() {             // add an action listener to the sale button
+            @Override
+            public void actionPerformed(ActionEvent e) {                    // when button is clicked
+                new SaleFrame();                                        	// display SaleFrame
+            }
+        }
+        );
     }
-
-}

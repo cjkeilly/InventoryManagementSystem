@@ -5,7 +5,6 @@ import java.util.Date;
 
 public class Sale {
 
-<<<<<<< HEAD
     private ArrayList<Item> cart;
     
 	// method to display the items purchased?
@@ -18,8 +17,6 @@ public class Sale {
 
 	}
 }
-=======
     private Item item;
     private Date date;
->>>>>>> branch 'master' of https://github.com/cjkeilly/InventoryManagementSystem.git
 }
