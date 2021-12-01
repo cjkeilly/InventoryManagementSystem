@@ -38,7 +38,7 @@ public class SaleFrame extends JFrame {
 	    //declare text fields and their labels
 	    itemCodeLabel = new JLabel("Item Code: ");
 	    itemCodeField = new JTextField();
-	    unitsPurchasedLabel = new JLabel("Number of Units Purchased: ");
+	    unitsPurchasedLabel = new JLabel("Number of Units Sold: ");
         unitsPurchasedField = new JTextField();
         itemNameLabel = new JLabel("Item Name: ");
         itemNameField = new JTextField();
